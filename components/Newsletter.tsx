@@ -46,7 +46,7 @@ export default function Newsletter() {
       <div className="bg-[#F5EFE0] border border-[#7A9E7A] rounded-2xl p-8 text-center">
         <div className="text-4xl mb-3">🎉</div>
         <h3 className="text-xl font-semibold text-[#3D3028] mb-2">
-          C'est parti !
+          {"C'est parti !"}
         </h3>
         <p className="text-[#8B7B6B]">
           Tu recevras les prochains articles directement dans ta boîte mail.
@@ -62,8 +62,7 @@ export default function Newsletter() {
           Recevoir les prochains articles
         </h3>
         <p className="text-[#8B7B6B] text-sm leading-relaxed">
-          Une activité testée, une vraie réaction d'enfant, aucun jargon.
-          Directement dans ta boîte mail.
+          {"Une activité testée, une vraie réaction d'enfant, aucun jargon. Directement dans ta boîte mail."}
         </p>
       </div>
 
