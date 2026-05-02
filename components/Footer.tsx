@@ -7,7 +7,7 @@ export default function Footer() {
           Grandir avec l&apos;IA — apprendre l&apos;intelligence artificielle sans écran
         </p>
         <p className="text-brun-lighter text-xs mt-4">
-          Un père, deux enfants (6 et 9 ans), et plein d&apos;idées à explorer ensemble.
+          Un père, deux enfants (6 et 3 ans), et plein d&apos;idées à explorer ensemble.
         </p>
       </div>
     </footer>
