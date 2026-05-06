@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const links = [
-  { href: '/', label: 'Home' },
+  { href: '/', label: 'Accueil' },
   { href: '/blog', label: 'Blog' },
-  { href: '/about', label: 'About' },
+  { href: '/a-propos', label: 'À propos' },
 ]
 
 export default function Navigation() {
@@ -18,8 +18,8 @@ export default function Navigation() {
         <Link href="/" className="flex items-center gap-2 group">
           <span className="text-2xl">🌱</span>
           <div>
-            <div className="font-bold text-brun text-lg leading-tight">Parent AI</div>
-            <div className="text-brun-light text-xs leading-tight">Growing Up with AI</div>
+            <div className="font-bold text-brun text-lg leading-tight">Parent IA</div>
+            <div className="text-brun-light text-xs leading-tight">Grandir avec l&apos;IA</div>
           </div>
         </Link>
 

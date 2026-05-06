@@ -11,33 +11,33 @@ const geistSans = localFont({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.parent-ia.eu'),
+  metadataBase: new URL('https://www.parent-ia.fr'),
   title: {
-    default: 'Parent AI | Growing Up with AI',
-    template: '%s | Parent AI',
+    default: 'Parent IA | Grandir avec l\'IA',
+    template: '%s | Parent IA',
   },
   description:
-    'A father documenting his experiences teaching artificial intelligence to his 6 and 3-year-old children through hands-on, playful, screen-free activities.',
+    'Un père documente ses expériences pour apprendre l\'intelligence artificielle à ses enfants de façon ludique, concrète, et sans écran. Des activités testées en famille.',
   keywords: [
-    'AI for kids', 'artificial intelligence children', 'teach AI kids', 'AI activities family',
-    'AI education', 'digital parenting', 'intro to AI', 'screen-free activities',
-    'playful AI', 'learning with kids',
+    'IA enfants', 'intelligence artificielle enfants', 'apprendre IA', 'activités IA famille',
+    'éducation IA', 'parent numérique', 'initiation intelligence artificielle', 'activités sans écran',
+    'IA ludique', 'apprendre avec les enfants',
   ],
-  authors: [{ name: 'Julien Seurat', url: 'https://www.parent-ia.eu/about' }],
+  authors: [{ name: 'Julien Seurat', url: 'https://www.parent-ia.fr/a-propos' }],
   creator: 'Julien Seurat',
-  publisher: 'Parent AI',
+  publisher: 'Parent IA',
   openGraph: {
     type: 'website',
-    siteName: 'Parent AI',
-    locale: 'en_US',
-    url: 'https://www.parent-ia.eu',
-    title: 'Parent AI | Growing Up with AI',
-    description: 'A father teaching AI to his kids through hands-on, screen-free activities.',
+    siteName: 'Parent IA',
+    locale: 'fr_FR',
+    url: 'https://www.parent-ia.fr',
+    title: 'Parent IA | Grandir avec l\'IA',
+    description: 'Un père documente ses expériences pour apprendre l\'IA à ses enfants de façon ludique, concrète, et sans écran.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Parent AI | Growing Up with AI',
-    description: 'A father teaching AI to his kids through hands-on, screen-free activities.',
+    title: 'Parent IA | Grandir avec l\'IA',
+    description: 'Un père documente ses expériences pour apprendre l\'IA à ses enfants de façon ludique, concrète, et sans écran.',
     creator: '@jujuseurat',
   },
   robots: {
@@ -52,7 +52,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.parent-ia.eu',
+    canonical: 'https://www.parent-ia.fr',
+  },
+  verification: {
+    google: 'XoeRZQvfM7EGDEH8H5k10Vk2a2K8LAgLbVhHtmLmIEs',
   },
 }
 
@@ -62,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`${geistSans.variable} font-sans antialiased bg-beige-50 text-brun`}>
         <Navigation />
         <main className="min-h-screen">{children}</main>

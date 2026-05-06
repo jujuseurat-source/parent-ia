@@ -13,39 +13,39 @@ export default function HomePage() {
         <div className="max-w-2xl mx-auto">
           <div className="text-5xl mb-4">🌱</div>
           <h1 className="text-4xl font-bold text-brun mb-3 leading-tight">
-            Growing Up with AI
+            Grandir avec l&apos;IA
           </h1>
           <p className="text-brun-light text-xl mb-2 font-medium">
-            Parent AI
+            Parent IA
           </p>
           <p className="text-brun-light text-base leading-relaxed mb-8 max-w-xl mx-auto">
-            A father teaching artificial intelligence to his 6 and 3-year-old children
-            through concrete, playful, screen-free activities.
+            Un père qui apprend l&apos;intelligence artificielle à ses enfants de 6 et 3 ans,
+            des activités concrètes, ludiques et sans écran.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/blog"
               className="inline-block bg-terracotta hover:bg-terracotta-500 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
             >
-              Read the articles
+              Lire les articles
             </Link>
             <Link
-              href="/about"
+              href="/a-propos"
               className="inline-block bg-beige-200 hover:bg-sauge-100 text-brun font-semibold px-6 py-3 rounded-xl transition-colors"
             >
-              Our story
+              Notre histoire
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Pillars */}
+      {/* Pilliers */}
       <section className="max-w-3xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
           {[
-            { icon: '🎯', titre: 'Hands-on', texte: 'Every article = an activity tested with my kids' },
-            { icon: '🙅', titre: 'Screen-free', texte: 'AI can be learned with pencils, paper, and play' },
-            { icon: '❤️', titre: 'Warm', texte: 'Failures, laughs, and discoveries shared together' },
+            { icon: '🎯', titre: 'Concret', texte: 'Chaque article = une activité testée avec mes enfants' },
+            { icon: '🙅', titre: 'Sans écran', texte: "L'IA s'apprend aussi avec des crayons, du papier, et du jeu" },
+            { icon: '❤️', titre: 'Chaleureux', texte: "Des ratés, des fous rires, des découvertes partagées" },
           ].map(({ icon, titre, texte }) => (
             <div key={titre} className="bg-white rounded-2xl p-5 border border-beige-200">
               <div className="text-3xl mb-2">{icon}</div>
@@ -56,13 +56,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Latest articles */}
+      {/* Derniers articles */}
       {articles.length > 0 && (
         <section className="max-w-3xl mx-auto px-4 pb-16">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-brun">Latest articles</h2>
+            <h2 className="text-2xl font-bold text-brun">Derniers articles</h2>
             <Link href="/blog" className="text-terracotta text-sm font-medium hover:underline">
-              See all →
+              Voir tout →
             </Link>
           </div>
           <div className="flex flex-col gap-4">
@@ -81,8 +81,8 @@ export default function HomePage() {
         <section className="max-w-3xl mx-auto px-4 pb-16 text-center">
           <div className="bg-sauge-100 rounded-2xl p-10">
             <div className="text-4xl mb-4">✍️</div>
-            <p className="text-brun font-semibold text-lg">Adventures coming soon!</p>
-            <p className="text-brun-light mt-2">The first article is on its way.</p>
+            <p className="text-brun font-semibold text-lg">Les aventures commencent bientôt !</p>
+            <p className="text-brun-light mt-2">Le premier article arrive très prochainement.</p>
           </div>
         </section>
       )}
