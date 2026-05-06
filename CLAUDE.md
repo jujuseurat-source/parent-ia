@@ -1,12 +1,7 @@
 # CLAUDE.md — Contexte Parent IA pour les prochaines sessions
 
-<<<<<<< HEAD
 **Mis à jour :** 07/05/2026  
 **Statut global :** 🟢 DEUX BLOGS EN LIGNE — parent-ia.fr (FR) + parent-ai.eu (EN) actifs avec HTTPS, redirects, SEO complet. Google Search Console EN : propriété vérifiée ✅, sitemap soumis ✅
-=======
-**Mis à jour :** 29/04/2026  
-**Statut global :** MVP fonctionnel ✅ — Phase d'enrichissement et déploiement
->>>>>>> parent of bf4477a (Initial commit — Parent AI English version)
 
 ---
 
@@ -48,7 +43,6 @@
 - [x] Règles d'écriture clairement définies (ton Julien, anti-patterns IA, structure)
 - [x] `getAllArticles()` et `getArticleBySlug()` fonctionnels dans `lib/articles.ts`
 
-<<<<<<< HEAD
 ### Déploiement & Git (fait le 29/04/2026)
 - [x] Git installé sur la machine (v2.54.0)
 - [x] Repo GitHub créé : `github.com/jujuseurat-source/parent-ia`
@@ -60,13 +54,10 @@
 - [x] DNS OVH `parent-ai.eu` : A `76.76.21.21` + CNAME www → Vercel ✅
 - [ ] `parent-ia.eu` → non enregistré (domaine inexistant dans OVH)
 
-=======
->>>>>>> parent of bf4477a (Initial commit — Parent AI English version)
 ---
 
 ## ⚠️ Problèmes connus / TODO
 
-<<<<<<< HEAD
 ### Urgent
 - [x] ~~Propagation DNS~~ : `parent-ia.fr` et `parent-ia.com` sont verts ✅ (fait le 29/04)
 - [ ] **OVH renouvellement auto** : Activer pour `parent-ai.eu` (les deux autres sont déjà en automatique)
@@ -81,15 +72,11 @@
 - [x] ~~SEO~~ : sitemap.xml dynamique, robots.txt, JSON-LD sur articles, keywords ✅
 - [x] ~~llms.txt~~ : Fichier pour les moteurs IA (Perplexity, ChatGPT...) ✅
 - [x] ~~Google Search Console~~ : Validé, sitemap soumis, 9 pages découvertes ✅
+- [x] ~~Audio Julien FR~~ : `/audio/a-propos/julien-pourquoi-ce-blog.mp3` en ligne sur `parent-ia.fr/a-propos` ✅
+- [x] ~~Audio Julien EN~~ : `/audio/a-propos/julien-why-this-blog.mp3` en ligne sur `parent-ai.eu/about` ✅
 
 ### Plus tard
 - [ ] **Filtrage par tags** : `/blog` n'a pas de filtres
-=======
-- [ ] **Tagline page d'accueil** : À vérifier/corriger (discussion en cours)
-- [ ] **Filtrage par tags** : `/blog` n'a pas de filtres (prévu pour plus tard)
-- [ ] **Déploiement Vercel** : Pas encore configuré
-- [ ] **Open Graph** : Métadonnées manquantes pour le partage social
->>>>>>> parent of bf4477a (Initial commit — Parent AI English version)
 - [ ] **Page contact/newsletter** : Pas prévue dans le MVP
 
 ---
@@ -265,18 +252,11 @@ npm start
 
 ## 📊 État actuel (snapshots)
 
-<<<<<<< HEAD
 **Blog FR en ligne :** `parent-ia.fr` ✅  
 **Blog EN en ligne :** `www.parent-ai.eu` ✅  
 **GitHub FR :** `github.com/jujuseurat-source/parent-ia`  
 **GitHub EN :** `github.com/jujuseurat-source/parent-ia-en`  
 **Dossier EN :** `C:\Users\julie\Desktop\Parent IA\parent-ia-en`
-=======
-**Articles écrits :** 1 (le-tri-magique)  
-**Articles en brouillon :** 0  
-**Concepts explorés :** Classification/catégorisation  
-**Enfants testés :** Romane (6 ans, CP) et Meryl (3 ans, PS maternelle)  
->>>>>>> parent of bf4477a (Initial commit — Parent AI English version)
 
 **Prochains articles suggérés :**
 - Mémoire / apprentissage
