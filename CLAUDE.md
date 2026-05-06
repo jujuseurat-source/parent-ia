@@ -1,7 +1,7 @@
 # CLAUDE.md — Contexte Parent IA pour les prochaines sessions
 
-**Mis à jour :** 01/05/2026  
-**Statut global :** 🟢 BLOG FULLY EN LIGNE — parent-ia.fr et parent-ia.com actifs avec HTTPS, redirects, SEO complet et Google Search Console configurés
+**Mis à jour :** 07/05/2026  
+**Statut global :** 🟢 DEUX BLOGS EN LIGNE — parent-ia.fr (FR) + parent-ai.eu (EN) actifs avec HTTPS, redirects, SEO complet. Google Search Console EN : propriété vérifiée ✅, sitemap soumis ✅
 
 ---
 
@@ -50,7 +50,9 @@
 - [x] Domaine `parent-ia.fr` ajouté dans Vercel + DNS OVH configurés ✅ VERT
 - [x] Domaine `parent-ia.com` ajouté dans Vercel + DNS OVH configurés ✅ VERT
 - [x] SSL généré automatiquement par Vercel sur les 4 domaines
-- [ ] `parent-ia.eu` → réservé pour version multilingue (plus tard)
+- [x] **Version anglaise** déployée sur Vercel (`parent-ia-en`) → `parent-ai.eu` ✅
+- [x] DNS OVH `parent-ai.eu` : A `76.76.21.21` + CNAME www → Vercel ✅
+- [ ] `parent-ia.eu` → non enregistré (domaine inexistant dans OVH)
 
 ---
 
@@ -59,9 +61,12 @@
 ### Urgent
 - [x] ~~Propagation DNS~~ : `parent-ia.fr` et `parent-ia.com` sont verts ✅ (fait le 29/04)
 - [ ] **OVH renouvellement auto** : Activer pour `parent-ai.eu` (les deux autres sont déjà en automatique)
+- [x] ~~Google Search Console EN~~ : Propriété vérifiée ✅ + sitemap soumis ✅ (fait le 07/05)
 
 ### Court terme
 - [ ] **Annonce lancement** : LinkedIn, partage sur réseaux
+- [x] ~~Env vars Vercel `parent-ia-en`~~ : Les 3 variables ajoutées ✅ (BREVO_API_KEY, BREVO_LIST_ID=3, NEWSLETTER_SECRET)
+- [x] ~~Push layout.tsx~~ : pushé ✅ — deploy Vercel "Fix: clean layout.tsx characters" actif
 - [x] ~~Redirect parent-ia.com → parent-ia.fr~~ : Configuré en 308 Permanent Redirect ✅
 - [x] ~~Open Graph~~ : Metadata complète, OG, Twitter cards sur toutes les pages ✅
 - [x] ~~SEO~~ : sitemap.xml dynamique, robots.txt, JSON-LD sur articles, keywords ✅
@@ -246,8 +251,11 @@ npm start
 
 ## 📊 État actuel (snapshots)
 
-**Blog en ligne :** `parent-ia.fr` ✅  
-**GitHub :** `github.com/jujuseurat-source/parent-ia`
+**Blog FR en ligne :** `parent-ia.fr` ✅  
+**Blog EN en ligne :** `www.parent-ai.eu` ✅  
+**GitHub FR :** `github.com/jujuseurat-source/parent-ia`  
+**GitHub EN :** `github.com/jujuseurat-source/parent-ia-en`  
+**Dossier EN :** `C:\Users\julie\Desktop\Parent IA\parent-ia-en`
 
 **Articles dans `content/articles/` :**
 - `le-tri-magique-classer-comme-une-ia.mdx` — Classification
