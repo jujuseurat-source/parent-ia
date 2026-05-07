@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 const AGE_GROUPS = [
   { value: '3-5', label: '3 – 5 ans', emoji: '🐣' },
@@ -140,10 +141,5 @@ export default function Newsletter() {
           {status === 'loading' ? 'Inscription en cours…' : 'Je m\'inscris →'}
         </button>
 
-        <p className="text-xs text-[#B5A898] text-center">
-          Pas de spam. Désabonnement en un clic.
-        </p>
-      </form>
-    </div>
-  )
-}
+        <p className="text-xs text-[#B5A898] text-center leading-relaxed">
+          J&apos;utilise votre email pour vous envoyer
