@@ -142,4 +142,15 @@ export default function Newsletter() {
         </button>
 
         <p className="text-xs text-[#B5A898] text-center leading-relaxed">
-          J&apos;utilise votre email pour vous envoyer
+          J&apos;utilise votre email pour vous envoyer la newsletter Grandir avec l&apos;IA.
+          La tranche d&apos;âge de votre enfant m&apos;aide à partager des idées plus adaptées.
+          Les envois passent par Brevo, et vous pouvez vous désinscrire à tout moment en un clic.{' '}
+          <Link href="/politique-de-confidentialite" className="underline hover:text-[#8B7B6B]">
+            Politique de confidentialité
+          </Link>
+          .
+        </p>
+      </form>
+    </div>
+  )
+      }
