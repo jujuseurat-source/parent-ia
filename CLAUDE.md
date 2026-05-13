@@ -1,7 +1,7 @@
 # CLAUDE.md — Contexte Parent IA pour les prochaines sessions
 
-**Mis à jour :** 07/05/2026  
-**Statut global :** 🟢 DEUX BLOGS EN LIGNE — parent-ia.fr (FR) + parent-ai.eu (EN) actifs avec HTTPS, redirects, SEO complet. Google Search Console EN : propriété vérifiée ✅, sitemap soumis ✅
+**Mis à jour :** 08/05/2026  
+**Statut global :** 🟢 INFRASTRUCTURE COMPLÈTE — deux blogs en ligne, newsletter FR + EN opérationnelle avec automation Brevo, RGPD en place. Phase suivante : contenu + distribution.
 
 ---
 
@@ -11,7 +11,7 @@
 
 **Tagline :** "Grandir avec l'IA"  
 **Stack :** Next.js 14 + Tailwind + TypeScript + MDX  
-**Dossier projet :** `C:\Users\julie\parent-ia`
+**Dossier projet :** `C:\Users\julie\Desktop\Parent IA\parent-ia`
 
 ---
 
@@ -65,8 +65,10 @@
 
 ### Court terme
 - [ ] **Annonce lancement** : LinkedIn, partage sur réseaux
-- [x] ~~Env vars Vercel `parent-ia-en`~~ : Les 3 variables ajoutées ✅ (BREVO_API_KEY, BREVO_LIST_ID=3, NEWSLETTER_SECRET)
+- [x] ~~Env vars Vercel `parent-ia-en`~~ : Les 3 variables ajoutées ✅ (BREVO_API_KEY, BREVO_LIST_ID=6, NEWSLETTER_SECRET)
+- [x] ~~Automation Brevo EN~~ : "Welcome email EN" active ✅ — déclencheur liste #6, délai 1 min, email de Julien (hello@parent-ai.eu), personnalisation {{AGE_GROUPE}} (fait le 08/05/2026)
 - [x] ~~Push layout.tsx~~ : pushé ✅ — deploy Vercel "Fix: clean layout.tsx characters" actif
+- [x] ~~Brevo domaine `parent-ai.eu` authentifié~~ : DKIM 1+2, DMARC, brevo-code dans OVH + vérification Brevo ✅ (fait le 08/05/2026)
 - [x] ~~Redirect parent-ia.com → parent-ia.fr~~ : Configuré en 308 Permanent Redirect ✅
 - [x] ~~Open Graph~~ : Metadata complète, OG, Twitter cards sur toutes les pages ✅
 - [x] ~~SEO~~ : sitemap.xml dynamique, robots.txt, JSON-LD sur articles, keywords ✅
@@ -74,10 +76,39 @@
 - [x] ~~Google Search Console~~ : Validé, sitemap soumis, 9 pages découvertes ✅
 - [x] ~~Audio Julien FR~~ : `/audio/a-propos/julien-pourquoi-ce-blog.mp3` en ligne sur `parent-ia.fr/a-propos` ✅
 - [x] ~~Audio Julien EN~~ : `/audio/a-propos/julien-why-this-blog.mp3` en ligne sur `parent-ai.eu/about` ✅
+- [x] ~~Mentions légales RGPD~~ : Page `/politique-de-confidentialite` (FR) + `/privacy-policy` (EN) créées ✅, texte RGPD sous formulaires newsletter ✅, emails contact@parent-ia.fr + hello@parent-ai.eu intégrés ✅ (fait le 08/05/2026)
 
-### Plus tard
+### Plus tard (technique)
 - [ ] **Filtrage par tags** : `/blog` n'a pas de filtres
 - [ ] **Page contact/newsletter** : Pas prévue dans le MVP
+
+---
+
+## 🗺️ Stratégie — Prochaines directions (ajoutées le 08/05/2026)
+
+### 1. Compte X / Twitter pour Parent IA
+- Créer un compte dédié (handle à définir : `@ParentIA` ou `@GrandiravecIA`)
+- Avantage clé : le LLM de X (Grok) traduit automatiquement → portée FR + EN naturelle
+- Format : micro-observations du quotidien avec les enfants, fragments d'articles, questions aux parents
+- Ton : identique au blog, court, concret, pas de posture d'expert
+- Lien avec les deux sites pour drainer du trafic
+
+### 2. Angle "Sciences cognitives de l'apprentissage"
+- Développer une expertise de fond sur les disciplines cognitives pour enrichir le blog + futurs formations
+- Thèmes clés à explorer :
+  - Mémoire de travail (Baddeley) — lien naturel avec "comment une IA mémorise"
+  - Charge cognitive (Sweller) — pourquoi simplifier les activités pour les enfants
+  - Apprentissage espacé (Ebbinghaus) — répétition, oubli, récupération
+  - Récupération active (testing effect)
+  - Métacognition chez l'enfant — "apprendre à apprendre"
+- Positionnement visé : intersection IA + neurosciences de l'apprentissage + éducation pratique
+- Débouchés : articles approfondis, futures formations, communication expert sur ce croisement
+
+### 3. Archives newsletter sur le site (4 premières de l'année)
+- Écrire les 4 premières newsletters "de l'année" et les stocker sur le site
+- Double usage : référence de ton pour Claude + preuve de cohérence éditoriale pour les visiteurs
+- Format envisagé : page `/newsletter` avec archives consultables
+- Chaque newsletter = une expérience réelle + lien avec un concept cognitif + activité adaptée par âge
 
 ---
 
@@ -210,7 +241,7 @@ parent-ia/
 
 ```bash
 # Développement
-cd C:\Users\julie\parent-ia
+cd "C:\Users\julie\Desktop\Parent IA\parent-ia"
 npm run dev
 # → http://localhost:3000
 
