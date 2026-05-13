@@ -49,8 +49,9 @@ export default function AProposPage() {
         <div>
           <p className="text-brun font-semibold text-lg mb-1">Un père, deux enfants, plein de curiosité</p>
           <p className="text-brun-light leading-relaxed">
-            Romane avait rangé le ketchup avec ses chaussettes et un tournevis. Son critère : &ldquo;les trucs rouges&rdquo;.
-            Je n&apos;avais rien à redire. C&apos;est de là qu&apos;est parti ce blog.
+            J&apos;ai demandé à Romane comment elle trouvait ses mots quand on inventait des phrases ensemble.
+            Elle a réfléchi une seconde : &ldquo;Ça vient dans ma tête tout seul.&rdquo;
+            C&apos;est probablement de là qu&apos;est parti ce blog.
           </p>
         </div>
       </div>
