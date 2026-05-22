@@ -37,5 +37,6 @@ next-env.d.ts
 
 .vercel
 .env*.local
-parent-ia/.env.vercel-fr 
-la-premiere-fois.png 
+parent-ia/.env.vercel-fr
+la-premiere-fois.png
+parent-ia/
