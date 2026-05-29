@@ -4,13 +4,13 @@ import AudioPlayer from '@/components/AudioPlayer'
 
 export const metadata: Metadata = {
   title: 'À propos',
-  description: 'Je m\'appelle Julien. Romane a 6 ans, Meryl en a 3. Ce blog raconte comment j\'essaie de leur expliquer l\'IA avec du papier, des jeux, et beaucoup de ratés.',
+  description: 'Je m\'appelle Julien. Romane a 6 ans, Meryl en a 3. Ce blog raconte comment j\'essaie de leur apprendre l\'IA par le jeu, sans écran, et avec beaucoup de ratés.',
   alternates: {
     canonical: 'https://www.parent-ia.fr/a-propos',
   },
   openGraph: {
     title: 'À propos | Parent IA',
-    description: 'Je m\'appelle Julien. Romane a 6 ans, Meryl en a 3. Ce blog raconte comment j\'essaie de leur expliquer l\'IA avec du papier, des jeux, et beaucoup de ratés.',
+    description: 'Je m\'appelle Julien. Romane a 6 ans, Meryl en a 3. Ce blog raconte comment j\'essaie de leur apprendre l\'IA par le jeu, sans écran, et avec beaucoup de ratés.',
     url: 'https://www.parent-ia.fr/a-propos',
     type: 'website',
   },
@@ -49,9 +49,9 @@ export default function AProposPage() {
         <div>
           <p className="text-brun font-semibold text-lg mb-1">Un père, deux enfants, plein de curiosité</p>
           <p className="text-brun-light leading-relaxed">
-            J&apos;ai demandé à Romane comment elle trouvait ses mots quand on inventait des phrases ensemble.
-            Elle a réfléchi une seconde : &ldquo;Ça vient dans ma tête tout seul.&rdquo;
-            C&apos;est probablement de là qu&apos;est parti ce blog.
+            Romane m&apos;a demandé si l&apos;IA rêvait. Je n&apos;ai pas su répondre.
+            Pas parce que la question est difficile. Parce que je n&apos;avais pas les mots.
+            C&apos;est là que tout a commencé.
           </p>
         </div>
       </div>
@@ -59,20 +59,22 @@ export default function AProposPage() {
       <div className="space-y-6 text-brun-light leading-relaxed">
         <p>
           Je m&apos;appelle Julien. Romane a 6 ans, Meryl en a 3. Je travaille dans le numérique.
-          Un soir au dîner, Romane a demandé ce que c&apos;était &ldquo;l&apos;IA dont tout le monde parle&rdquo;.
-          J&apos;ai cherché mes mots. Rien de bon n&apos;est sorti.
+          Un soir, on a sorti Ary de sa boîte, une peluche connectée avec une IA intégrée.
+          Ils lui criaient dessus, la retournaient dans tous les sens, lui posaient deux questions
+          contradictoires dans la même phrase. Une heure de chaos complet.
         </p>
 
         <p>
-          J&apos;aurais pu lui montrer ChatGPT. Mais je voulais autre chose : qu&apos;elle comprenne
-          la logique avant l&apos;outil. La décision, le tri, la reconnaissance de formes.
-          Avec les mains, pas un écran.
+          Ce que j&apos;ai compris ce soir-là : leur cerveau enregistrait quelque chose,
+          même sans comprendre. La qualité de la réponse dépend de la qualité de la question.
+          Ils ne le savaient pas encore. Mais ils étaient en train de le découvrir.
         </p>
 
         <p>
-          Alors on a commencé à inventer des jeux. Du papier, des dés, des objets du salon.
-          Meryl participait surtout en renversant les piles. Et quelque chose s&apos;est passé :
-          ça a marché. Pas toujours comme prévu. Mais ça a marché.
+          J&apos;aurais pu leur expliquer. Mais à 3 et 6 ans, un exposé sur l&apos;IA dure
+          trente secondes avant qu&apos;on parle d&apos;autre chose. Alors on a inventé des jeux.
+          Du papier, des dés, des objets du salon. Meryl participait surtout en renversant les piles.
+          Et quelque chose s&apos;est passé : ça a marché. Pas toujours comme prévu. Mais ça a marché.
         </p>
 
         <p>
@@ -97,7 +99,7 @@ export default function AProposPage() {
         <div className="mt-10">
           <h2 className="text-xl font-bold text-brun mb-2">En voix</h2>
           <p className="text-brun-light text-sm mb-5">
-            Parce que certaines choses se ressentent mieux qu&apos;elles ne s&apos;expliquent.
+            Julien en quelques minutes.
           </p>
           <div className="space-y-3">
             {AUDIO.julien.enabled && (
