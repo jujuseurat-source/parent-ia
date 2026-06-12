@@ -4,10 +4,10 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 const AGE_GROUPS = [
-  { value: '3-5', label: '3 – 5 ans', emoji: '🐣' },
-  { value: '6-8', label: '6 – 8 ans', emoji: '🚀' },
-  { value: '9-11', label: '9 – 11 ans', emoji: '🔬' },
-  { value: '12+', label: '12 ans et +', emoji: '🤖' },
+  { value: '3-5', label: '3 – 5 ans' },
+  { value: '6-8', label: '6 – 8 ans' },
+  { value: '9-11', label: '9 – 11 ans' },
+  { value: '12+', label: '12 ans et +' },
 ]
 
 export default function Newsletter() {
@@ -44,12 +44,11 @@ export default function Newsletter() {
 
   if (status === 'success') {
     return (
-      <div className="bg-[#F5EFE0] border border-[#7A9E7A] rounded-2xl p-8 text-center">
-        <div className="text-4xl mb-3">🎉</div>
-        <h3 className="text-xl font-semibold text-[#3D3028] mb-2">
+      <div className="bg-brun rounded-3xl p-10 sm:p-14 text-center">
+        <h3 className="font-serif text-2xl font-semibold text-beige mb-2">
           {"C'est parti !"}
         </h3>
-        <p className="text-[#8B7B6B]">
+        <p className="text-brun-lighter">
           Tu recevras les prochains articles directement dans ta boîte mail.
         </p>
       </div>
@@ -57,20 +56,23 @@ export default function Newsletter() {
   }
 
   return (
-    <div className="bg-[#F5EFE0] border border-[#B5A898] rounded-2xl p-8">
-      <div className="mb-6">
-        <h3 className="text-xl font-semibold text-[#3D3028] mb-2">
-          Recevoir les prochains articles
+    <div className="bg-brun rounded-3xl p-8 sm:p-12 grid grid-cols-1 md:grid-cols-[1.1fr,0.9fr] gap-10 items-center">
+      {/* Pitch */}
+      <div>
+        <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-beige mb-3 leading-snug">
+          Une activité par mois, dans ta boîte mail
         </h3>
-        <p className="text-[#8B7B6B] text-sm leading-relaxed">
-          {"Une activité testée, une vraie réaction d'enfant, aucun jargon. Directement dans ta boîte mail."}
+        <p className="text-brun-lighter leading-relaxed">
+          Une activité testée, une vraie réaction d&apos;enfant, aucun jargon.
+          Adaptée à l&apos;âge de ton enfant.
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-5">
+      {/* Formulaire */}
+      <form onSubmit={handleSubmit} className="bg-beige-50/5 border border-beige-50/15 rounded-2xl p-6 space-y-4">
         {/* Sélection tranche d'âge */}
         <div>
-          <p className="text-sm font-medium text-[#3D3028] mb-3">
+          <p className="text-sm font-semibold text-brun-lighter mb-2.5">
             Mon enfant a…
           </p>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
@@ -78,11 +80,11 @@ export default function Newsletter() {
               <label
                 key={group.value}
                 className={`
-                  flex flex-col items-center gap-1 p-3 rounded-xl border-2 cursor-pointer
-                  transition-all duration-150 text-center
+                  flex items-center justify-center p-2.5 rounded-xl border-2 cursor-pointer
+                  transition-all duration-150 text-center text-xs font-semibold leading-tight
                   ${ageGroup === group.value
-                    ? 'border-[#B86A3E] bg-[#B86A3E]/10 text-[#B86A3E]'
-                    : 'border-[#B5A898] bg-white text-[#8B7B6B] hover:border-[#B86A3E]/50'
+                    ? 'border-terracotta bg-terracotta text-white'
+                    : 'border-beige-50/25 text-beige hover:border-terracotta/70'
                   }
                 `}
               >
@@ -94,8 +96,7 @@ export default function Newsletter() {
                   onChange={() => setAgeGroup(group.value)}
                   className="sr-only"
                 />
-                <span className="text-2xl">{group.emoji}</span>
-                <span className="text-xs font-medium leading-tight">{group.label}</span>
+                {group.label}
               </label>
             ))}
           </div>
@@ -114,9 +115,9 @@ export default function Newsletter() {
             placeholder="ton@email.fr"
             required
             className="
-              w-full px-4 py-3 rounded-xl border-2 border-[#B5A898]
-              bg-white text-[#3D3028] placeholder-[#B5A898]
-              focus:outline-none focus:border-[#B86A3E]
+              w-full px-4 py-3 rounded-xl border-2 border-beige-50/20
+              bg-beige-50/10 text-beige placeholder-brun-lighter
+              focus:outline-none focus:border-terracotta
               transition-colors duration-150
             "
           />
@@ -124,7 +125,7 @@ export default function Newsletter() {
 
         {/* Erreur */}
         {status === 'error' && (
-          <p className="text-red-600 text-sm">{errorMsg}</p>
+          <p className="text-red-300 text-sm">{errorMsg}</p>
         )}
 
         {/* Bouton */}
@@ -132,8 +133,8 @@ export default function Newsletter() {
           type="submit"
           disabled={!email || !ageGroup || status === 'loading'}
           className="
-            w-full py-3 px-6 rounded-xl font-semibold text-white
-            bg-[#B86A3E] hover:bg-[#a05a30]
+            w-full py-3 px-6 rounded-full font-semibold text-white
+            bg-terracotta hover:bg-terracotta-500
             disabled:opacity-50 disabled:cursor-not-allowed
             transition-colors duration-150
           "
@@ -141,11 +142,11 @@ export default function Newsletter() {
           {status === 'loading' ? 'Inscription en cours…' : 'Je m\'inscris →'}
         </button>
 
-        <p className="text-xs text-[#B5A898] text-center leading-relaxed">
+        <p className="text-xs text-brun-lighter text-center leading-relaxed">
           J&apos;utilise votre email pour vous envoyer la newsletter Grandir avec l&apos;IA.
           La tranche d&apos;âge de votre enfant m&apos;aide à partager des idées plus adaptées.
           Les envois passent par Brevo, et vous pouvez vous désinscrire à tout moment en un clic.{' '}
-          <Link href="/politique-de-confidentialite" className="underline hover:text-[#8B7B6B]">
+          <Link href="/politique-de-confidentialite" className="underline hover:text-beige">
             Politique de confidentialité
           </Link>
           .

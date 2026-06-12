@@ -100,13 +100,27 @@ export default function ArticlePage({ params }: Props) {
       </div>
 
       {/* Titre */}
-      <h1 className="text-3xl font-bold text-brun mb-4 leading-tight">
+      <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-brun mb-4 leading-tight text-balance">
         {frontmatter.titre}
       </h1>
 
       <p className="text-brun-light text-lg leading-relaxed mb-8">
         {frontmatter.resume}
       </p>
+
+      {/* Photo de l'activité */}
+      {frontmatter.image && (
+        <div className="relative aspect-[3/2] rounded-2xl overflow-hidden mb-8 shadow-md">
+          <Image
+            src={frontmatter.image}
+            alt={frontmatter.titre}
+            fill
+            sizes="(max-width: 768px) 100vw, 672px"
+            priority
+            className="object-cover"
+          />
+        </div>
+      )}
 
       {/* Méta */}
       <div className="bg-beige-100 rounded-2xl p-5 mb-8 grid grid-cols-2 gap-3 text-sm">
@@ -131,7 +145,7 @@ export default function ArticlePage({ params }: Props) {
       {/* Contenu MDX */}
       <article className="
         prose prose-stone max-w-none
-        prose-headings:text-brun prose-headings:font-bold
+        prose-headings:text-brun prose-headings:font-serif prose-headings:font-semibold
         prose-h2:text-xl prose-h2:mt-8 prose-h2:mb-3
         prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-2
         prose-p:text-brun-light prose-p:leading-relaxed
@@ -157,7 +171,7 @@ export default function ArticlePage({ params }: Props) {
       <div className="mt-10 text-center">
         <Link
           href="/blog"
-          className="inline-block bg-terracotta hover:bg-terracotta-500 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+          className="inline-block bg-terracotta hover:bg-terracotta-500 text-white font-semibold px-6 py-3 rounded-full transition-colors"
         >
           Voir tous les articles
         </Link>

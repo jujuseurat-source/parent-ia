@@ -58,7 +58,7 @@ export default function BlogClient({ articles }: BlogClientProps) {
       {filtered.length === 0 ? (
         <p className="text-brun-light text-center py-10">Aucun article pour ce tag pour l&apos;instant.</p>
       ) : (
-        <div className="flex flex-col gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filtered.map(article => (
             <ArticleCard
               key={article.slug}

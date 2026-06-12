@@ -20,9 +20,9 @@ export default function BlogPage() {
   const articles = getAllArticles()
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-12">
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold text-brun mb-3">Le blog</h1>
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="mb-10 max-w-2xl">
+        <h1 className="font-serif text-4xl font-semibold text-brun mb-3">Les activités</h1>
         <p className="text-brun-light text-lg leading-relaxed">
           Toutes nos aventures avec l&apos;IA : des activités concrètes testées en famille,
           avec ce qui a marché, ce qui a moins marché, et ce qu&apos;on en a retenu.
