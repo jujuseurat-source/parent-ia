@@ -41,9 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       tags: frontmatter.tags,
       siteName: 'Parent IA',
       locale: 'fr_FR',
-      images: frontmatter.image
-        ? [{ url: `https://www.parent-ia.fr${frontmatter.image}`, width: 1200, height: 630, alt: frontmatter.titre }]
-        : [{ url: 'https://www.parent-ia.fr/images/articles/la-premiere-fois.jpg', width: 1200, height: 630, alt: 'Parent IA — Grandir avec l\'IA' }],
+      // L'image OG est générée par article via opengraph-image.tsx (next/og)
     },
     twitter: {
       card: 'summary_large_image',
