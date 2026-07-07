@@ -2,13 +2,14 @@
 titre: "Le jeu des ratés : se tromper pour apprendre"
 date: "2026-05-31"
 age_cible: "6-10 ans"
-duree: "35 minutes"
+duree: "25 minutes"
 materiel:
-  - "Une cible dessinée sur une grande feuille (trois cercles concentriques)"
-  - "Des petits objets à lancer : bouchons, pièces, cailloux"
-  - "Un crayon pour noter les essais"
-resume: "On a joué à viser une cible en ajustant à chaque essai. Puis on a parlé de comment une IA fait exactement ça : elle rate, on lui dit comment elle a raté, elle ajuste. Encore et encore, jusqu'à ce que ça marche."
-retour_enfants: "Romane a compris très vite qu'il fallait rater pour savoir comment corriger. Elle a dit que c'était 'comme apprendre à vélo mais en plus long'. Meryl lançait tous ses bouchons en même temps."
+  - "Une cible dessinée sur une feuille (cercles concentriques)"
+  - "Des petits objets de poids et de formes différentes : une pièce, une perle, une figurine, un bâtonnet"
+  - "Un bac pour ranger les objets à lancer"
+image: "/images/articles/le-jeu-des-rates.jpg"
+resume: "Assise, Romane n'arrivait à rien toucher. Puis elle en a posé deux, puis trois, en changeant sa façon de lancer. Chaque objet, une pièce, une perle, une figurine, demandait un réglage différent. C'est exactement comme ça qu'une IA apprend : elle rate, elle ajuste, objet après objet."
+retour_enfants: "Romane a commencé assise, sans rien toucher au début. Elle a fini par en poser deux, puis trois, en changeant sa manière de lancer. Debout, ça ne marchait plus, elle est revenue s'asseoir. Chaque objet demandait un lancer différent, plus fort ou plus doux selon le poids et la forme. Ce qu'elle n'arrivait pas à prévoir, c'était ce qui se passait une fois l'objet au sol."
 tags:
   - "apprentissage"
   - "erreur"
@@ -16,11 +17,21 @@ tags:
   - "sans-écran"
 ---
 
-Romane a raté la cible dix-sept fois avant de la toucher.
+Romane est assise devant sa cible. Les premiers lancers ne touchent rien. Pas un seul.
 
-Elle comptait. Elle voulait absolument compter. Après chaque raté, elle observait où son bouchon avait atterri, elle réfléchissait une seconde, et elle recommençait différemment.
+Elle ne bouge pas de position, mais elle change sa manière de lancer. Au bout de plusieurs essais, un objet touche enfin la cible. Puis un deuxième. Puis un troisième.
 
-Au dix-septième essai, le bouchon a touché le cercle du milieu. Elle a levé les bras.
+Elle essaie debout, pour voir. Ça ne marche plus du tout. Elle se rassoit.
+
+<Image
+  src="/images/articles/le-jeu-des-rates.jpg"
+  alt="La cible dessinée sur une feuille à carreaux, à côté d'un bac avec les objets à lancer : pièce, perle, figurines, bâtonnet"
+  width={800}
+  height={600}
+  className="rounded-xl mx-auto my-6 shadow-md"
+/>
+
+<p className="text-center text-sm text-brun-lighter italic -mt-4 mb-6">La cible et les objets du jour. Aucun ne pèse ni ne vole pareil.</p>
 
 ## Comment une IA apprend à ne plus se tromper
 
@@ -30,40 +41,28 @@ Au départ, elle ne sait rien. Si on lui demande de reconnaître un chat sur une
 
 Ça s'appelle la rétropropagation. L'idée derrière : chaque erreur dit quelque chose sur comment s'améliorer. Rater n'est pas le problème. C'est le moteur.
 
-Ce qui change tout, c'est le nombre d'essais. Un enfant apprend à viser en quelques dizaines de lancers. Une IA peut avoir besoin de millions d'exemples pour reconnaître un chat. Ce qui nous prend une heure peut lui prendre des semaines de calcul.
+Ce qui change tout, c'est le nombre d'essais, et la stabilité des conditions. Un enfant qui change de position à chaque lancer repart presque de zéro. Une IA à qui on change les règles en cours d'entraînement a le même problème : elle n'ajuste bien que si ce qu'elle corrige reste comparable d'un essai à l'autre.
 
 ## L'activité
 
-On dessine une cible sur une grande feuille : trois cercles, un point au centre. On la pose au sol ou on l'accroche au mur.
+On dessine une cible sur une feuille : des cercles concentriques, un point au centre. On la pose au sol.
 
-Chaque joueur dispose de dix objets identiques à lancer, un par un, depuis la même distance.
+On rassemble plusieurs petits objets très différents les uns des autres : une pièce, une perle, une figurine, un bâtonnet. Pas le même poids, pas la même forme.
 
-La règle : après chaque lancer, on regarde où l'objet a atterri, et on décide comment ajuster le suivant. On ne lance pas en rafale. On observe, on réfléchit, on recommence.
+On lance un objet à la fois, depuis la même distance, et on regarde où il atterrit avant de lancer le suivant. On observe, on ajuste, on recommence.
 
-On note le nombre d'essais avant de toucher la cible, ou on mesure la distance à la cible après chaque essai.
+On essaie assis, puis debout, et on regarde si ça change quelque chose. On essaie aussi de changer d'objet en cours de route, et on regarde si l'ajustement qui marchait avec le premier marche encore avec le deuxième.
 
-À mi-chemin, on pose la question : *"Qu'est-ce que tu changes à chaque fois ? Comment tu sais quoi changer ?"*
-
-La plupart répondent sans réfléchir : trop fort, trop à gauche, trop haut. C'est exactement ce qu'on donne à une IA quand on la corrige.
-
-Deuxième manche : on bande les yeux. On lance sans regarder où ça tombe. On ne donne aucun retour. Le nombre d'essais avant de toucher la cible explose. Ou on ne touche jamais.
-
-C'est une IA à qui on ne dit plus si elle a raison ou tort. Elle continue de répondre, mais elle n'apprend plus rien.
+À un moment, on pose la question : *"Qu'est-ce que tu changes à chaque fois ? Comment tu sais quoi changer ?"*
 
 ## Ce qui s'est vraiment passé
 
-Romane avait une stratégie. Elle lançait doucement le premier coup pour avoir un point de repère, puis elle ajustait progressivement. Elle a dit que c'était *"comme apprendre à vélo mais en plus long"*. J'aurais pas dit mieux.
+Assise, Romane n'a rien touché pendant plusieurs lancers. Puis elle a changé sa façon de lancer, et elle a réussi à en poser deux, puis trois d'affilée.
 
-La manche les yeux bandés l'a frustrée. Elle trouvait ça injuste. *"Sans savoir si je touche, je peux pas m'améliorer."* Exactement.
+Elle a voulu essayer debout. Ça n'a plus marché du tout, comme si tout ce qu'elle avait réglé en position assise ne comptait plus. Elle est retournée s'asseoir sans que j'aie besoin de le suggérer.
 
-Meryl participait à sa façon. Il avait récupéré tous ses bouchons dans ses deux mains et les a tous lancés en même temps, d'un grand geste large. Certains ont touché la cible par hasard. Il était ravi. Il a recommencé.
+Chaque objet lui demandait un ajustement différent. La pièce, légère et plate, ne se lançait pas comme la figurine, plus lourde et plus encombrante. Elle devait relancer plus fort pour l'une, plus doucement pour l'autre.
 
-J'ai essayé d'expliquer que ça ne marchait que si un avait touché par hasard, et que la prochaine fois il ne saurait pas lequel c'était. Il a haussé les épaules. *"Le rouge."* Il désignait un bouchon rouge qui avait atterri près du centre.
+Ce qu'elle maîtrisait de mieux en mieux, c'était la trajectoire en l'air. Ce qu'elle ne pouvait toujours pas prévoir, c'était ce qui se passait au moment où l'objet touchait le sol. Un rebond, un roulé, un mouvement qu'elle n'avait pas vu venir, et l'objet finissait ailleurs que prévu.
 
-Peut-être qu'il avait une stratégie aussi.
-
-À la fin, Romane a demandé combien d'essais une IA avait besoin pour apprendre à reconnaître un chien.
-
-J'ai dit : des millions.
-
-Elle a regardé sa cible. *"C'est long."*
+Elle maîtrisait le vol. Pas l'atterrissage.
